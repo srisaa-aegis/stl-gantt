@@ -96,4 +96,8 @@ Baselines, resource allocation, task constraints (must start on...), MS Project 
 
 ## Licence
 
-MIT
+MIT. Copyright (c) 2026 Srisaa Technologies (OPC) Private Limited.
+
+## Credits
+
+Created and maintained by Srisaa Technologies (OPC) Private Limited.

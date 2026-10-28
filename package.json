@@ -48,7 +48,7 @@
     "ts-jest": "^29.1.0",
     "typescript": "^5.5.0"
   },
-  "author": "Srisaa Technologies",
+  "author": "Srisaa Technologies (OPC) Private Limited",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/srisaa-aegis/stl-gantt.git"
