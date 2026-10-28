@@ -2,7 +2,7 @@
 
 A dependency-free TypeScript Gantt chart. Plain DOM, no framework, MIT licensed.
 
-![stl-gantt demo: three phases with dependencies, the critical path in red, holidays shaded and a today line](demo/gantt.png)
+![stl-gantt demo: three phases with dependencies, the critical path in red, holidays shaded and a today line](https://raw.githubusercontent.com/srisaa-aegis/stl-gantt/main/demo/gantt.png)
 
 - Task outline (groups and tasks); drag to move, resize and set progress
 - Dependencies: finish-to-start, start-to-start, finish-to-finish, start-to-finish, with lag or lead
