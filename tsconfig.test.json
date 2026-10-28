@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.cjs.json",
+  "compilerOptions": { "rootDir": ".", "types": ["jest"], "noEmit": true },
+  "include": ["src/**/*.ts", "test/**/*.ts", "demo/**/*.ts"]
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>stl-gantt demo</title>
+<link rel="stylesheet" href="../src/style.css" />
+<style>
+  html, body { height: 100%; margin: 0; font-family: system-ui, sans-serif; color: #1f2937; }
+  body { display: flex; flex-direction: column; }
+  header { padding: 10px 16px; border-bottom: 1px solid #e5e7eb; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  header h1 { font-size: 16px; margin: 0; }
+  header label { font-size: 13px; display: flex; gap: 4px; align-items: center; }
+  header button { font-size: 13px; padding: 4px 10px; cursor: pointer; }
+  #g { flex: 1; min-height: 0; margin: 10px 16px; }
+  #log { font: 12px/1.4 ui-monospace, monospace; background: #f9fafb; border-top: 1px solid #e5e7eb; padding: 6px 16px; height: 90px; overflow: auto; white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<header>
+  <h1>stl-gantt</h1>
+  <label><input type="checkbox" id="crit" checked /> Critical path</label>
+  <label><input type="checkbox" id="ro" /> Read only</label>
+  <label>Zoom
+    <select id="zoom"><option>day</option><option selected>week</option><option>month</option><option>quarter</option></select>
+  </label>
+  <label>Holidays <input id="hol" value="2026-11-12, 2026-11-26" size="26" /></label>
+  <button id="apply">Apply calendar</button>
+  <button id="reset">Reset sample</button>
+  <span style="font-size:12px;color:#6b7280">Drag bars, edges and the progress diamond; drag from the dot at the end of a bar onto another bar to link; double-click a name.</span>
+</header>
+<div id="g"></div>
+<div id="log">Edits made in the chart are reported here (the library never saves anything itself).</div>
+<script src="./gantt.js"></script>
+</body>
+</html>
